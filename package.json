@@ -1,0 +1,23 @@
+{
+  "name": "basique-discord-bot",
+  "version": "1.0.0",
+  "description": "A basic Discord bot by yanishamburger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanishamburger/basic-bot-discord.git"
+  },
+  "author": "yanishamburger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yanishamburger/basic-bot-discord/issues"
+  },
+  "homepage": "https://github.com/Yanishamburger/basic-bot-discord#readme",
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
+  }
+}
