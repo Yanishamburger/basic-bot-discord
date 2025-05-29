@@ -52,7 +52,7 @@ Additional files:
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/basic-discord-bot.git
+git clone https://github.com/Yanishamburger/basic-discord-bot.git
 cd basic-discord-bot
 ```
 
