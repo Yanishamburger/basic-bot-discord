@@ -1,6 +1,6 @@
-# Discord Bot Project
+# Basic Discord Bot
 
-A powerful, modular Discord bot built with [discord.js](https://discord.js.org/).
+A modular and scalable Discord bot built with [discord.js](https://discord.js.org/), featuring dynamic command, event, and interaction loading.
 
 ---
 
@@ -8,30 +8,39 @@ A powerful, modular Discord bot built with [discord.js](https://discord.js.org/)
 
 ```
 src/
-├── bot.js                # Main bot startup script
+├── bot.js                # Main bot startup logic
 ├── commands/             # Slash command modules
-│   ├── fun/
-│   └── utility/
-├── events/               # Event handlers (e.g., ready, messageCreate)
-│   ├── guild/
-│   └── message/
-├── interactions/         # Interaction handlers (buttons, select menus)
-│   ├── buttons/
-│   └── selects/
-└── loaders/              # Loaders for commands, events, and interactions
-config.js                 # Configuration file (token, prefix, etc.)
-start.js                  # Error handlers and startup
+│   └── information/
+│       └── ping.js
+├── events/               # Event handlers
+│   └── exemple/
+│       └── ready.js
+├── interactions/         # Interaction handlers
+│   ├── button/
+│   │   └── exemple-boutons.js
+│   └── menus/
+│       └── exemple-menus.js
+├── loaders/              # Loaders for commands, events, and interactions
+│   ├── loadCommands.js
+│   ├── loadEvents.js
+│   └── loadInteractions.js
+index.js                  # Entry point
 ```
+Additional files:
+- `.env` – Stores sensitive information (e.g., TOKEN)
+- `config.js` – Optional static configuration (empty or minimal)
+- `start.bat` – Batch file to start the bot
+- `README.md` – Project documentation
 
 ---
 
 ## 🚀 Features
 
-- ✅ Modular command system with category support
-- ✅ Dynamic event and interaction loading
-- ✅ Persistent interactions (buttons, selects)
-- ✅ Clear error handling and logging
-- ✅ Easy scalability and customization
+- ✅ Modular slash command system
+- ✅ Dynamic event loading
+- ✅ Persistent interactions (buttons, menus)
+- ✅ Clean project structure
+- ✅ Environment variable support via `.env`
 
 ---
 
@@ -43,8 +52,8 @@ start.js                  # Error handlers and startup
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-bot-repo.git
-cd your-bot-repo
+git clone https://github.com/your-username/basic-discord-bot.git
+cd basic-discord-bot
 ```
 
 ### 3️⃣ Install Dependencies
@@ -53,15 +62,7 @@ npm install
 ```
 
 ### 4️⃣ Configure the Bot
-Edit `config.js` or use a `.env` file:
-```js
-module.exports = {
-    TOKEN: 'YOUR_DISCORD_BOT_TOKEN',
-    PREFIX: '/',
-    COLOR: '#5865F2',
-};
-```
-Or in `.env`:
+Create a `.env` file in the root directory with the following content:
 ```
 TOKEN=YOUR_DISCORD_BOT_TOKEN
 ```
@@ -70,42 +71,42 @@ TOKEN=YOUR_DISCORD_BOT_TOKEN
 ```bash
 node start.js
 ```
+Or use the `start.bat` script (Windows only):
+```
+start.bat
+```
 
 ---
 
 ## 📚 Usage
 
-- **Commands**: `/ping`, `/help`, etc.
-- **Buttons & Selects**: Handled in `src/interactions/`
-- **Events**: Auto-loaded from `src/events/`
+- **Commands**: Slash commands like `/ping` in `src/commands/information/ping.js`
+- **Events**: Handlers like `ready` in `src/events/exemple/ready.js`
+- **Interactions**: Buttons and select menus in `src/interactions/`
 
 ---
 
 ## 📌 Notes
 
-- Interactions remain functional after bot restarts.
-- Logging system using `client.logger`.
-- Easily extendable with new commands, events, and interactions.
-
----
-
-## 🌟 Future Plans
-
-- 📈 Database integration
-- 🔒 Enhanced permission checks
-- 🌍 Multi-language support
+- Commands, events, and interactions are auto-loaded from their respective directories.
+- Use `.env` to manage sensitive information securely (like your bot token).
+- Extendable structure for adding more commands, events, and interactions.
 
 ---
 
 ## 🤝 Contributions
 
-Feel free to fork the repo and submit pull requests!
+Feel free to fork the project and submit pull requests.
 
 ---
 
 ## 📄 License
 
 Licensed under the [MIT License](LICENSE).
+
+---
+
+### 🎉 Happy Coding !
 
 ---
 
