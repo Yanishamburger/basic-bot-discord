@@ -53,7 +53,7 @@ Additional files:
 ### 2️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Yanishamburger/basic-discord-bot.git
-cd basic-discord-bot
+cd .\basic-bot-discord\
 ```
 
 ### 3️⃣ Install Dependencies
