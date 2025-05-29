@@ -69,7 +69,7 @@ TOKEN=YOUR_DISCORD_BOT_TOKEN
 
 ### 5️⃣ Start the Bot
 ```bash
-node start.js
+node .
 ```
 Or use the `start.bat` script (Windows only):
 ```
