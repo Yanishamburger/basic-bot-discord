@@ -15,6 +15,7 @@ src/
 ├── events/               # Event handlers
 │   └── exemple/
 │       └── ready.js
+│       └── interactionCreate.js
 ├── interactions/         # Interaction handlers
 │   ├── button/
 │   │   └── exemple-boutons.js
