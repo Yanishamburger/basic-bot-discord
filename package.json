@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Yanishamburger/basic-bot-discord#readme",
   "dependencies": {
-    "discord.js": "^14.19.3",
+    "discord.js": "^14.22.1",
     "dotenv": "^16.5.0"
   }
 }
